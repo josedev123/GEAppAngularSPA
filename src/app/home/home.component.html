@@ -3,7 +3,7 @@
 
 <div *ngIf="registerMode">
 
-<app-register [valuesFromHome]="values"></app-register>
+<app-register [valuesFromHome]="values" (cancelRegister)="cancelRegisterMode($event)"></app-register>
 
 </div>
 
