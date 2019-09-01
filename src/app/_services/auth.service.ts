@@ -18,4 +18,9 @@ login(model: any) {
 }
 
 
+register(model: any) {
+  model.confirmPassword = model.password;
+  return this.httpClient.post(this.apiURL + '/api/Account/Register', model);
+}
+
 }
