@@ -1,0 +1,9 @@
+
+<button (click)="registerToggle()">Register</button>
+
+<div *ngIf="registerMode">
+
+<app-register [valuesFromHome]="values"></app-register>
+
+</div>
+
